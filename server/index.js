@@ -33,9 +33,6 @@ app.use(express.json());
             ,password,
             device_id,
             api_key,
-            schoolName,
-            Class,
-            rollNo
         }=req.body;
 
     if(userName=="GayathriChowdaryVadlamudi" && password=="514233241"){
@@ -46,6 +43,9 @@ app.use(express.json());
             username:userName,
             Password:password,
             userID:device_id ,
+            ClassName:Class,
+            RollNumber:rollNo,
+            SchoolName:schoolName
 
             },
             AccessToken:"12345", //used to acess api's,Sent with every request,  Checked by backend
