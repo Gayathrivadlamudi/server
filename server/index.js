@@ -3,7 +3,7 @@ const app=express();
 const port=process.env.PORT || 3000;
 const apikey="hjysgt87e-andcommparent-84376-mcb-dt34986tj";
 const schoolName="NLP SCHOOL"
-const class="4th",
+const Class="4th",
 const rollNo="2345B45"
 const { v4: uuidv4 } = require("uuid");
 app.use(express.json());
@@ -34,7 +34,7 @@ app.use(express.json());
             device_id,
             api_key,
             schoolName,
-            class,
+            Class,
             rollNo
         }=req.body;
 
