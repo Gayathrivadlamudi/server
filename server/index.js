@@ -32,7 +32,7 @@ app.use(express.json());
             api_key
         }=req.body;
 
-    if(username=="GayathriChowdaryVadlamudi" && pass=="514233241"){
+    if(userName=="GayathriChowdaryVadlamudi" && password=="514233241"){
     return res.json({
     status:1,
     response:{
