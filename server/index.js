@@ -2,9 +2,9 @@ const express=require("express");
 const app=express();
 const port=process.env.PORT || 3000;
 const apikey="hjysgt87e-andcommparent-84376-mcb-dt34986tj";
-const schoolName="NLP SCHOOL"
-const Class="4th",
-const rollNo="2345B45"
+const schoolName="NLP SCHOOL";
+const Class="4th";
+const rollNo="2345B45";
 const { v4: uuidv4 } = require("uuid");
 app.use(express.json());
 
