@@ -2,6 +2,9 @@ const express=require("express");
 const app=express();
 const port=process.env.PORT || 3000;
 const apikey="hjysgt87e-andcommparent-84376-mcb-dt34986tj";
+const schoolName="NLP SCHOOL"
+const class="4th",
+const rollNo="2345B45"
 const { v4: uuidv4 } = require("uuid");
 app.use(express.json());
 
@@ -29,7 +32,10 @@ app.use(express.json());
             userName
             ,password,
             device_id,
-            api_key
+            api_key,
+            schoolName,
+            class,
+            rollNo
         }=req.body;
 
     if(userName=="GayathriChowdaryVadlamudi" && password=="514233241"){
