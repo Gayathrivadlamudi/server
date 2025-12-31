@@ -7,7 +7,7 @@ app.use(express.json());
 
 
     function api_check(req,res,next){
-    const api_key=req.headers['x-api-key'] || req.body.apikey;
+    const api_key=req.headers['x-api-key'] || req.body.api_key;
     if (api_key!=apikey){
     return res.status(401).json(
     {
