@@ -73,28 +73,27 @@ app.use(express.json());
 
     });
     app.post("/getAllSiblingData",api_check,async(req,res)=>{
-        const siblings=[
-        {
-                    fullName: "MEDA NAGA VIKASINI",
-                    className: "VI",
-                    section: "A",
-                    rollNo: "18JHPS020036",
-        },
-        {
-                    fullName: "MEDA NAGA KAUSHIK",
-                    className: "VII",
-                    section: "A",
-                    rollNo: "17JHPS020010",
-        }
-        ];
-        return res.json(
-        {
-            status:1,
-            data:{
-                getSiblings:siblings
-            }
-        } );
-    }
+    try{ const siblings=[
+                {
+                            fullName: "MEDA NAGA VIKASINI",
+                            className: "VI",
+                            section: "A",
+                            rollNo: "18JHPS020036",
+                },
+                {
+                            fullName: "MEDA NAGA KAUSHIK",
+                            className: "VII",
+                            section: "A",
+                            rollNo: "17JHPS020010",
+                }
+                ];
+                return res.json(
+                {
+                    status:1,
+                    data:{
+                        getSiblings:siblings
+                    }
+                } );}
     catch(e){
     console.log(e);
     return res.json({
@@ -102,6 +101,6 @@ app.use(express.json());
     message:"Server error"
     });
     }
-    );
+    });
     app.listen(port,"0.0.0.0",()=>{
     console.log(`Server is running at ${port}`)})
